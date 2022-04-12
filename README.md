@@ -1,5 +1,5 @@
 # Java-UI
-A light weight toolset that allows you to build Java UI and create data visualizations instantly.
+A light weight toolset that allows you to build Java UI and create plot visualizations instantly.
 
 ## Components
 * ScaleLayout: an implementation of layout manager that takes care of all the sizing

@@ -249,21 +249,20 @@ public class Algorithms {
 		keyChain = new int[rgList.length*5/2];
 		list2 = new double[rgList.length];
 		orgList = rgList;
-		yuelongRecursion(0, 0, rgList.length);
+		binRecursion(0, 0, rgList.length);
 		
 		return orgList;
 	}
 	
 	/**
 	 * The underlying recursion mechanism of yuelong sort, which sorts the list into ascending order.
-	 * @see Algorithms.yuelongSort
 	 * @param orgList 
 	 * @param keySize the starting position available for key storage in key chain
 	 * @param start the starting of the sublist
 	 * @param length of the sublist: start+length = endingIndex + 1 = firstIndexOfTheNextSublist
 	 * @return the sorted list
 	 */
-	private static void yuelongRecursion(int keySize, int start, int length) {
+	private static void binRecursion(int keySize, int start, int length) {
 		
 		if(length <= 1) return;//special case1
 		if(length == 2) {//special case 2
@@ -309,13 +308,14 @@ public class Algorithms {
 		}
 		
 		for(int i = keySize+1; i<keySize+length; i++) {
-			yuelongRecursion(keySize+length,start+keyChain[i-1], keyChain[i]-keyChain[i-1]);
+			binRecursion(keySize+length,start+keyChain[i-1], keyChain[i]-keyChain[i-1]);
 		}
 	}
 	
 	/**
-	 * A very special sorting algorithm that works the best when the list comprises of random yet evenly scattered digits
+	 * A special sorting algorithm that works the best when the list comprises of random yet evenly scattered digits
 	 * This method sorts things into ascending order
+	 * 
 	 * @param list The list to be sorted
 	 * @return sorted the sorted list
 	 * @date 2017/06/23
@@ -352,7 +352,7 @@ public class Algorithms {
 	static int compareTime =0;
 	
 	/**
-	 * A very special sorting algorithm that works the best when the list comprises of random yet evenly scattered digits
+	 * A special sorting algorithm that works the best when the list comprises of random yet evenly scattered digits
 	 * This method sorts things into ascending order
 	 * @param list The list to be sorted
 	 * @return sorted the sorted list
@@ -390,8 +390,9 @@ public class Algorithms {
 	}
 	
 	/**
-	 * Finds the derivative of a function at a certain point. The copyright of the mechanism is subjected of Yuelong Li
-	 * @author Yuelong Li
+	 * Finds the derivative of a function at a certain point. Adjusts for max numerical accuracy by adjusting
+	 * derivative step based on function value
+	 * 
 	 * @param function function to be derived
 	 * @param input defines the point where the derivative is to be found
 	 * @return the derivative of the function at input

@@ -566,5 +566,5 @@ public class DataPane3D extends DataPane2D {
 }
 
 /*
- * © Copyright 2017 Cannot be used without authorization
+ * Copyright 2017
  */

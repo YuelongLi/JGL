@@ -12,5 +12,5 @@ public interface ChangeListener<T> {
 	public void stateChanged(T source);
 }
 /*
- * © Copyright 2020 Cannot be used without authorization
+ * Copyright 2020
  */

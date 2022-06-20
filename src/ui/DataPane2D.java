@@ -625,5 +625,5 @@ public class DataPane2D extends JPanel {
 	}
 }
 /*
- * © Copyright 2017 Cannot be used without authorization
+ * Copyright 2017
  */

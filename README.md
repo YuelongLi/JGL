@@ -13,7 +13,7 @@ A light weight toolset that allows you to build Java UI and create plot visualiz
 <img src="img/gradient-descent-example.png" alt="GradientDescent" width="75%"/>
 
 - Double pendulum simulation
-<img src="img/double-pendulum.png" alt="DoublePendulum" width="75%"/>
+[<img src="img/double-pendulum.png" alt="DoublePendulum" width="75%"/>](src/examples/DoublePendulum.java)
 
 - Functional plotting
 <img src="img/analysis-frame.png" alt="AnalysisFrame" width="75%"/>

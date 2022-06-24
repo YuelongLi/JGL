@@ -551,6 +551,6 @@ public class JSizer{
 	}
 }
 /*
- * Â© Copyright 2016
+ * © Copyright 2016
  * Cannot be used without authorization
  */

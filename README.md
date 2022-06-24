@@ -9,14 +9,17 @@ A light weight toolset that allows you to build Java UI and create plot visualiz
 * Dataset and its subclasses
 
 ## Examples
-* Gradient descent visualization
-![GradientDescent](img/gradient-descent-example.png)
-* Double pendulum simulation
-![DoublePendulum](img/double-pendulum.png)
-* Functional plotting
-![AnalysisFrame](img/analysis-frame.png)
-* Data visualization
-![DataVis](img/data-vis.png)
+- Gradient descent visualization
+<img src="img/gradient-descent-example.png" alt="GradientDescent" width="75%"/>
+
+- Double pendulum simulation
+<img src="img/double-pendulum.png" alt="DoublePendulum" width="75%"/>
+
+- Functional plotting
+<img src="img/analysis-frame.png" alt="AnalysisFrame" width="75%"/>
+
+- Data visualization
+<img src="img/data-vis.png" alt="DataVis" width="75%"/>
 
 
 ## Dependency

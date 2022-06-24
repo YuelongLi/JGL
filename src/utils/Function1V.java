@@ -5,7 +5,6 @@ import java.util.ArrayList;
 
 import codeLibrary.Algorithms;
 import codeLibrary.GradientDescent;
-import database.LinearizedData;
 
 /**
  * A functional interface that is open for use. It uses derivative algorithm to
@@ -15,7 +14,7 @@ import database.LinearizedData;
  * @author Yuelong Li
  *
  */
-public class Function1V extends Curve implements Function {
+public class Function1V extends Curve implements FunctionPlot {
 
 	public ArrayList<double[]> curve;
 
@@ -27,21 +26,13 @@ public class Function1V extends Curve implements Function {
 	 * Creates a graphable dataset containing the 1 variable function
 	 * @param functionInterface
 	 */
-	public Function1V(MultiVarInterface functionInterface) {
-		this.functionInterface = functionInterface;
+	public Function1V(SingleVarInterface functionInterface) {
+		this.functionInterface = (cds)->functionInterface.get(cds[0]);
 		range[0] = -10;
 		range[1] = 10;
 		curve = new ArrayList<double[]>(10000);
 	}
 	
-	/**
-	 * Creates a graphable dataset containing the 1 variable function
-	 * @param data
-	 */
-	public Function1V(LinearizedData data) {
-		this((xy)->data.get(xy[0]));
-	}
-
 	private double I_x;
 	private double I_y;
 	private double soughtValue = 0;

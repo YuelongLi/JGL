@@ -1,6 +1,6 @@
 package utils;
 
-public interface Function{
+public interface FunctionPlot{
 	
 	public void setFunction(MultiVarInterface newFunctionInterface);
 	public MultiVarInterface getFunction();

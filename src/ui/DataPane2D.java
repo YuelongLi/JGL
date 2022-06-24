@@ -23,7 +23,7 @@ import javax.swing.Timer;
 
 import utils.Curve;
 import utils.Dataset;
-import utils.Function;
+import utils.FunctionPlot;
 import utils.Particle;
 import utils.Particles;
 import utils.Chart;
@@ -105,7 +105,7 @@ public class DataPane2D extends JPanel {
 		this.drawAxis = drawAxis;
 	}
 
-	Stroke regular = new BasicStroke(1.6f);
+	Stroke regular = new BasicStroke(1.2f);
 	double size = functions.size();
 
 	// For inherited classes to access super method
@@ -178,7 +178,7 @@ public class DataPane2D extends JPanel {
 			Dataset function = functions.get(k);
 			if(!function.visible)
 				continue;
-			if (function instanceof Function)
+			if (function instanceof FunctionPlot)
 				function.initialize();
 
 			g2.setColor(function.getColor());
@@ -326,8 +326,8 @@ public class DataPane2D extends JPanel {
 	 */
 	protected void renewDatasets() {
 		for (Dataset function : functions) {
-			if (function instanceof Function) {
-				((Function) function).setRangeByBounds(locator.tox(0), locator.tox(locator.I_X),
+			if (function instanceof FunctionPlot) {
+				((FunctionPlot) function).setRangeByBounds(locator.tox(0), locator.tox(locator.I_X),
 						locator.toy(locator.I_Y), locator.toy(0));
 				function.setPlotGap(getPlottingGapC());
 			}

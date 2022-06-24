@@ -2,6 +2,8 @@ package database;
 
 import java.util.ArrayList;
 
+import utils.SingleVarInterface;
+
 /**
  * The backbone of all data analysis. LinearizedData is the structure that holds
  * functional data for quick access (log(n)), modification (constant or log(n)),
@@ -10,7 +12,7 @@ import java.util.ArrayList;
  * @author Yuelong Li
  *
  */
-public class LinearizedData implements Function{
+public class LinearizedData implements SingleVarInterface{
 	/**
 	 * Unit testing
 	 */

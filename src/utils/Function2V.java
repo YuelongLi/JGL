@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import codeLibrary.Algorithms;
 
-public class Function2V extends Surface implements Function{
+public class Function2V extends Surface implements FunctionPlot{
 
 	protected double[] range = new double[4];
 

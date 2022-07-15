@@ -1,5 +1,5 @@
-# Java-UI
-A light weight toolset that allows you to build Java UI and create plot visualizations instantly.
+# JInteract
+A highly customizable package for you to build data visualizations in Java
 
 ## Components
 * ScaleLayout: an implementation of layout manager that takes care of all the sizing

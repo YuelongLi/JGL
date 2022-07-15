@@ -1,5 +1,5 @@
 # JInteract
-A highly customizable package for you to build data visualizations in Java
+A highly customizable package for you to build interactive data visualizations in Java
 
 ## Components
 * ScaleLayout: an implementation of layout manager that takes care of all the sizing

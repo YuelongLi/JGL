@@ -32,6 +32,9 @@ public class SimpleGrapher {
 ![basic-usage](img/basic-usage.png)
 
 ## Examples
+-Multi-Variable Plotting
+<img src="img/MultiVariable.png" alt="MultiVariable" width="75%"/>
+
 - Gradient descent visualization
 <img src="img/gradient-descent-example.png" alt="GradientDescent" width="75%"/>
 

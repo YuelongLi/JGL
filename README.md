@@ -39,6 +39,7 @@ public class SimpleGrapher {
 <img src="img/gradient-descent-example.png" alt="GradientDescent" width="75%"/>
 
 - Double pendulum simulation
+
 [<img src="img/double-pendulum.png" alt="DoublePendulum" width="75%"/>](src/examples/DoublePendulum.java)
 
 - Functional plotting

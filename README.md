@@ -1,4 +1,4 @@
-# JInteract
+# JGL
 A highly customizable package for you to build interactive data visualizations in Java
 
 ## Components
